@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: #343434;
+    background-image: url(../img/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+a{
+    text-decoration: none;
+  
+}
+@media screen and (max-width: 700px) {
+   
+
+        .header,
+        .form{
+            margin: 0 auto;
+        }
+        .header{
+            height: 20%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+            color: orangered;
+            margin: auto;
+            font-size: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+        }
+        .form{
+            width: 90%;
+        height: 78%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.8)
+        }
+        .goInscription,
+        input
+        {
+            background-color: transparent;
+        
+        }
+        .form form{
+        
+            width: 90%;
+            height: 55%;
+            margin: 6% auto 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* border: solid red; */
+        }
+        input{
+            width: 60%;
+            height: 15%;
+            margin: auto;
+            border: none;
+            text-align: center;
+            color: white;
+            border-bottom : solid orangered 1px;
+        
+        }
+        input::placeholder,
+        input[type=submit]{
+            text-align: center;
+            color: white ;
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+        
+        }
+        input[type=submit],
+        .goInscription{
+         border : solid orangered 2px;
+        
+        }
+        
+        .info{
+            /* border: solid red; */
+            text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        font-size: 0.8rem;
+        color: white;
+        
+        }
+        .goInscription{
+         width: 53%;
+         height: 11%;
+         margin: 0 auto;
+         transition: all 300ms;
+        }
+        p{
+            
+            text-align: center;
+            font-size: 1.2rem;
+            color: white;
+            font-weight: 400;
+            /* border: solid red; */
+            /* height: 100%; */
+        }
+     
+    }
+
+@media screen and (min-width:700px) and (max-width: 900px) {
+
+    .header,
+    .form{
+        margin: 0 auto;
+    }
+    .header{
+        height: 20%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        text-align: center;
+        color: orangered;
+        margin: auto;
+        font-size: 1.9rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    .form{
+        width: 65%;
+    height: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .goInscription,
+    input
+    {
+        background-color: transparent;
+
+    
+    }
+    .form form{
+        width: 90%;
+        height: 70%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: solid red; */
+    }
+    input{
+        width: 60%;
+        height: 15%;
+        margin: auto;
+        border: none;
+        text-align: center;
+        color: white;
+        border-bottom : solid orangered 1px;
+    
+    }
+    input::placeholder,
+    input[type=submit]{
+        text-align: center;
+        color: white ;
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+    
+    }
+    input[type=submit],
+    .goInscription{
+     border : solid orangered 2px;
+    
+    }
+    
+    .info{
+        color: white;
+        text-align: center;
+    margin: 0 auto;
+    width: 55%;
+    font-size: 0.9rem;
+    
+    }
+    .goInscription{
+     width: 48%;
+     height: 11%;
+     margin: 0 auto;
+     transition: all 300ms;
+    }
+    p{
+        
+        text-align: center;
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 400;
+        /* border: solid red; */
+        /* height: 100%; */
+    }
+ 
+}
+@media screen and (min-width: 900px) {
+
+.header,
+.form,
+.bottomPage{
+    width: 80%;
+    margin: 0 auto;
+}
+.header{
+    height: 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    color: orangered;
+    margin: auto;
+    font-size: 2.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+.form{
+    width: 50%;
+height: 78%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+border-radius: 5px;
+background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+input,
+.goInscription
+{
+    background-color: transparent;
+
+}
+.form form{
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+input{
+    width: 60%;
+    height: 17.5%;
+    margin: auto;
+    border: none;
+    color: white;
+    text-align: center;
+    border-bottom : solid orangered 1px;
+
+}
+input::placeholder,
+input[type=submit]{
+    text-align: center;
+    color: white ;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+input[type=submit],
+.goInscription{
+ border : solid orangered 2px;
+
+}
+
+.info{
+    text-align: center;
+margin: 0 auto;
+width: 48%;
+font-size: 1rem;
+color: white;
+
+
+}
+.goInscription{
+ width: 48%;
+ height: 13%;
+ margin: 0 auto;
+ transition: all 300ms;
+}
+
+p{
+    
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    /* border: solid red; */
+    /* height: 100%; */
+}
+
+}

@@ -1,0 +1,448 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: sans-serif;
+    color: #343434;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-image: url(../img/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        text-align: center;
+        color: orangered;
+        font-size: 1.8rem;
+    }
+    .form {
+        width: 90%;
+        height: 85%;
+        margin: auto;
+        border-radius: 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.8)
+    }
+    
+    input,
+    .retour {
+        background-color: transparent;
+    }
+    input::-webkit-input-placeholder,
+    input,
+    p {
+        text-align: center;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    input:-ms-input-placeholder,
+    input,
+    p {
+        text-align: center;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    input::placeholder,
+    input,
+    p {
+        text-align: center;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .form form {
+        width: 90%;
+        height: 80%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        /* border: solid red; */
+    }
+    form div {
+        /* border: #343434 solid; */
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        font-size: 0.8rem;
+    }
+    form input {
+        width: 60%;
+        height: 7%;
+        margin: auto;
+        border: none;
+        border-bottom: solid orangered 1px;
+    }
+    form>input::-webkit-input-placeholder {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    form>input:-ms-input-placeholder {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    form>input::placeholder {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    label {
+        text-align: center;
+        font-size: 0.85rem;
+        width: 70%;
+        margin: auto;
+        color: white;
+    }
+    input[type=file] {
+        height: auto;
+        text-align: center;
+        font-size: 0.8rem;
+        border: solid orangered 2px;
+    }
+    input[type=submit] {
+        font-size: 1rem;
+        font-family: sans-serif;
+        border: solid orangered 2px;
+    }
+    .infos {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0.9rem;
+        width: 55%;
+        color: white;
+    }
+    .retour {
+        width: 55%;
+        height: 7%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: solid orangered 2px;
+    }
+    p {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width: 900px) {
+    h1 {
+        text-align: center;
+        color: orangered;
+        font-size: 1.8rem;
+    }
+    .form {
+        width: 67%;
+        height: 85%;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: auto;
+        border-radius: 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+    input,
+    .retour {
+        background-color: transparent;
+    }
+    input::-webkit-input-placeholder,
+    input,
+    p {
+        text-align: center;
+        color: white;
+    }
+    input:-ms-input-placeholder,
+    input,
+    p {
+        text-align: center;
+        color: white;
+    }
+    input::placeholder,
+    input,
+    p {
+        text-align: center;
+        color: white;
+    }
+    .form form {
+        width: 90%;
+        height: 80%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        /* border: solid red; */
+    }
+    form div {
+        /* border: #343434 solid; */
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        font-size: 1rem;
+    }
+    form input {
+        width: 60%;
+        height: 10%;
+        margin: auto;
+        border: none;
+        border-bottom: solid orangered 1px;
+    }
+    form>input::-webkit-input-placeholder {
+        text-align: center;
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    form>input:-ms-input-placeholder {
+        text-align: center;
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    form>input::placeholder {
+        text-align: center;
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    label {
+        text-align: center;
+        font-size: 0.9rem;
+        width: 60%;
+        margin: auto;
+        color: white;
+    }
+    input[type=file] {
+        height: auto;
+        text-align: center;
+        font-size: 0.85rem;
+        border: solid orangered 2px;
+    }
+    input[type=submit] {
+        font-size: 1rem;
+        font-family: sans-serif;
+        border: solid orangered 2px;
+    }
+    .infos {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1rem;
+        width: 54%;
+        color: white;
+    }
+    .retour {
+        width: 54%;
+        height: 9%;
+        margin: 0 auto;
+        border: solid orangered 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    h1 {
+        text-align: center;
+        color: orangered;
+        font-size: 2.3rem;
+    }
+    .form {
+        width: 65%;
+        height: 85%;
+        margin: auto;
+        border-radius: 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    input,
+    .retour {
+        background-color: transparent;
+    }
+    input::-webkit-input-placeholder,
+    input,
+    p {
+        text-align: center;
+        color: white;
+    }
+    input:-ms-input-placeholder,
+    input,
+    p {
+        text-align: center;
+        color: white;
+    }
+    input::placeholder,
+    input,
+    p {
+        text-align: center;
+        color: white;
+        
+    }
+    .form form {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        /* border: solid red; */
+    }
+    form div {
+        /* border: #343434 solid; */
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        font-size: 1.3rem;
+    }
+    form input {
+        width: 60%;
+        height: 10%;
+        margin: auto;
+        border: none;
+        border-bottom: solid orangered 1px;
+    }
+    form>input::-webkit-input-placeholder {
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: sans-serif;
+    }
+    form>input:-ms-input-placeholder {
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: sans-serif;
+    }
+    form>input::placeholder {
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: sans-serif;
+    }
+    label {
+        text-align: center;
+        font-size: 1rem;
+        width: 60%;
+        margin: auto;
+        color: white;
+    }
+    input[type=file] {
+        height: auto;
+        text-align: center;
+        font-size: 0.8rem;
+        border: solid orangered 2px;
+    }
+    input[type=submit] {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        border: solid orangered 2px;
+    }
+    .infos {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.1rem;
+        width: 48%;
+        color: white;
+    }
+    .retour {
+        width: 48%;
+        height: 9%;
+        margin: 0 auto;
+        border: solid orangered 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    p {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
