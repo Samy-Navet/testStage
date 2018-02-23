@@ -1,5 +1,5 @@
 # testStage
-indication : 
+indications : 
 
 étape 1 : créer une base de données et importer le fichier rendusolive.sql dans un serveur pouvant gerer des bases de données mySQL.
 
